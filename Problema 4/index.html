@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problema 4 - Palíndromo</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		var palabra = prompt("Ingrese la palabra");
+
+		function isPalindrome(){
+			palabra = palabra.toLowerCase().replace(/ /g, "");
+			var palabra2 = palabra.split('').reverse().join('');
+
+			if (palabra == palabra2) {
+				alert(palabra +' Es un palíndromo');
+			}else{
+				alert('La palabra '+palabra +' no es un palíndromo')
+			}
+		}
+
+		isPalindrome();
+
+	</script>
+
+</body>
+</html>
